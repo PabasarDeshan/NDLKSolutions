@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lankan Safest Driving | Project Details | NDLK Solutions</title>
+    <meta name="description"
+        content="Detailed case study of Sri Lankan Safest Driving - A premium travel and tourism platform.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        ndlk: {
+                            navy: '#020c1b',
+                            blue: '#0a192f',
+                            light: '#e2e8f0',
+                            green: '#06b6d4',
+                            orange: '#3b82f6',
+                            dark: '#020c1b'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-ndlk-dark text-ndlk-light selection:bg-ndlk-orange selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-ndlk-navy/90 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/ND.png" alt="NDLK Solutions"
+                    class="h-10 w-auto object-contain transition-transform group-hover:scale-105">
+                <span class="text-2xl font-bold text-white tracking-widest hidden md:block">
+                    NDLK <span class="text-ndlk-orange group-hover:text-ndlk-green transition-colors">SOLUTIONS</span>
+                </span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">HOME</a>
+                <a href="about.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">ABOUT</a>
+                <a href="services.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">SERVICES</a>
+                <a href="projects.html" class="nav-link text-sm font-medium text-ndlk-orange">PROJECTS</a>
+                <a href="contact.html"
+                    class="px-4 py-2 border border-ndlk-orange text-ndlk-orange rounded hover:bg-ndlk-orange/10 transition-colors text-sm font-medium">CONTACT
+                    US</a>
+            </div>
+            <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-ndlk-navy border-t border-ndlk-blue absolute w-full">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block hover:text-ndlk-orange">HOME</a>
+                <a href="about.html" class="block hover:text-ndlk-orange">ABOUT</a>
+                <a href="services.html" class="block hover:text-ndlk-orange">SERVICES</a>
+                <a href="projects.html" class="block text-ndlk-orange">PROJECTS</a>
+                <a href="contact.html" class="block text-ndlk-orange font-bold">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Hero -->
+    <section class="pt-32 md:pt-48 pb-12 md:pb-24 bg-ndlk-navy relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div
+                class="absolute top-20 left-1/4 w-[500px] h-[500px] bg-ndlk-orange/20 rounded-full blur-[120px] animate-pulse">
+            </div>
+            <div class="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-ndlk-green/10 rounded-full blur-[100px]">
+            </div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span
+                class="px-4 py-2 bg-ndlk-orange/10 text-ndlk-orange border border-ndlk-orange/20 rounded-full text-xs font-bold uppercase tracking-widest mb-8 inline-block animate-fade-in-up">Travel
+                & Tourism Solution</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 animate-fade-in-up"
+                style="animation-delay: 0.1s;">Sri Lankan <span class="text-ndlk-orange">Safest Driving</span></h1>
+            <p class="text-xl text-slate-400 mb-12 animate-fade-in-up max-w-3xl mx-auto" style="animation-delay: 0.2s;">
+                A premium digital platform for travelers seeking safe, reliable tourism services and luxury
+                accommodations across the paradise island.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in-up" style="animation-delay: 0.3s;">
+                <div class="p-6 bg-white/5 border border-white/5 rounded-2xl backdrop-blur-sm">
+                    <p class="text-ndlk-orange text-xs font-bold uppercase tracking-wider mb-2">Category</p>
+                    <p class="text-white font-semibold">Travel Site</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/5 rounded-2xl backdrop-blur-sm">
+                    <p class="text-ndlk-orange text-xs font-bold uppercase tracking-wider mb-2">Completion</p>
+                    <p class="text-white font-semibold">March 2026</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/5 rounded-2xl backdrop-blur-sm">
+                    <p class="text-ndlk-orange text-xs font-bold uppercase tracking-wider mb-2">Target</p>
+                    <p class="text-white font-semibold">Global Tourists</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/5 rounded-2xl backdrop-blur-sm">
+                    <p class="text-ndlk-orange text-xs font-bold uppercase tracking-wider mb-2">Platform</p>
+                    <p class="text-white font-semibold">Next-Gen Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Visual Carousel -->
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web home.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web itineraries.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web day.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web best place.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web more.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-6 pb-12 md:py-12 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-fade-in-up"
+                style="animation-delay: 0.4s;">
+                <img src="image/travel web vilaa.png" alt="Travel Site Interface"
+                    class="w-full h-auto object-contain object-top hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy/80 via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Narrative -->
+    <section class="py-24 bg-ndlk-dark">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-7 space-y-12">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Experience the Paradise</h2>
+                        <p class="text-lg text-slate-400 leading-relaxed">Sri Lankan Safest Driving isn't just a
+                            website; it's a complete travel ecosystem. We developed this platform to bridge the gap
+                            between travelers and high-quality, safe transport and accommodation services. The site
+                            features a rich gallery of Sri Lanka's hidden gems, easy villa rentals, and a direct line to
+                            the most trusted drivers in the country.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Core Features</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div
+                                class="p-8 bg-ndlk-blue rounded-2xl border border-white/5 hover:border-ndlk-orange/30 transition-colors">
+                                <div
+                                    class="w-12 h-12 bg-ndlk-orange/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-ndlk-orange" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-white mb-3">Best Visiting Places</h4>
+                                <p class="text-slate-400 text-sm">A curated selection of the most beautiful and safest
+                                    spots in Sri Lanka with rich media content.</p>
+                            </div>
+                            <div
+                                class="p-8 bg-ndlk-blue rounded-2xl border border-white/5 hover:border-ndlk-orange/30 transition-colors">
+                                <div
+                                    class="w-12 h-12 bg-ndlk-orange/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-ndlk-orange" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-white mb-3">Luxury Villa Rentals</h4>
+                                <p class="text-slate-400 text-sm">Direct integration for booking premium villas,
+                                    ensuring a comfortable stay for every traveler.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div
+                        class="sticky top-32 p-10 bg-ndlk-blue rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-ndlk-orange/10 rounded-full blur-[60px]">
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-8">Platform Highlights</h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-center gap-4 text-slate-300">
+                                <span class="w-2 h-2 bg-ndlk-orange rounded-full"></span>
+                                High-Resolution Image Gallery
+                            </li>
+                            <li class="flex items-center gap-4 text-slate-300">
+                                <span class="w-2 h-2 bg-ndlk-orange rounded-full"></span>
+                                Safe Driver Verification System
+                            </li>
+                            <li class="flex items-center gap-4 text-slate-300">
+                                <span class="w-2 h-2 bg-ndlk-orange rounded-full"></span>
+                                Personalized Tour Planning
+                            </li>
+                            <li class="flex items-center gap-4 text-slate-300">
+                                <span class="w-2 h-2 bg-ndlk-orange rounded-full"></span>
+                                Multi-Platform Reviews System
+                            </li>
+                            <li class="flex items-center gap-4 text-slate-300">
+                                <span class="w-2 h-2 bg-ndlk-orange rounded-full"></span>
+                                24/7 Mobile Support Access
+                            </li>
+                        </ul>
+                        <div class="mt-12 pt-8 border-t border-white/5">
+                            <a href="contact.html"
+                                class="w-full py-4 bg-ndlk-orange text-white text-center font-bold rounded-xl block hover:bg-orange-600 transition-colors shadow-xl shadow-ndlk-orange/20">Plan
+                                a Custom Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Footer -->
+    <section class="py-20 bg-ndlk-dark">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <a href="projects.html"
+                class="flex items-center gap-4 text-slate-400 hover:text-ndlk-orange transition-colors group">
+                <svg class="w-6 h-6 group-hover:-translate-x-2 transition-transform" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                <span class="text-lg font-bold uppercase tracking-widest">Back to Projects</span>
+            </a>
+            <div class="flex gap-4">
+                <a href="contact.html"
+                    class="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-ndlk-orange transition-all tracking-widest uppercase text-xs">Partner
+                    with NDLK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ndlk-dark pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-widest block mb-6">
+                NDLK <span class="text-ndlk-orange">SOLUTIONS</span>
+            </a>
+            <p class="text-slate-500 text-sm">&copy; 2026 NDLK Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

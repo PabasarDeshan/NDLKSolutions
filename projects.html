@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | NDLK Solutions</title>
+    <meta name="description" content="Explore our latest work - POS systems, Web Applications, and Digital Solutions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        ndlk: {
+                            navy: '#020c1b',
+                            blue: '#0a192f',
+                            light: '#e2e8f0',
+                            green: '#06b6d4',
+                            orange: '#3b82f6',
+                            dark: '#020c1b'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'shine': 'shine 1.5s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        shine: {
+                            '0%': { left: '-100%' },
+                            '100%': { left: '200%' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .project-card:hover .shine-effect {
+            animation: shine 1.5s forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-ndlk-dark text-ndlk-light selection:bg-ndlk-orange selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-ndlk-navy/90 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/ND.png" alt="NDLK Solutions"
+                    class="h-10 w-auto object-contain transition-transform group-hover:scale-105">
+                <span class="text-2xl font-bold text-white tracking-widest hidden md:block">
+                    NDLK <span class="text-ndlk-orange group-hover:text-ndlk-green transition-colors">SOLUTIONS</span>
+                </span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">HOME</a>
+                <a href="about.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">ABOUT</a>
+                <a href="services.html"
+                    class="nav-link text-sm font-medium hover:text-ndlk-orange transition-colors">SERVICES</a>
+                <a href="projects.html" class="nav-link text-sm font-medium text-ndlk-orange">PROJECTS</a>
+                <a href="contact.html"
+                    class="px-4 py-2 border border-ndlk-orange text-ndlk-orange rounded hover:bg-ndlk-orange/10 transition-colors text-sm font-medium">CONTACT
+                    US</a>
+            </div>
+            <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-ndlk-navy border-t border-ndlk-blue absolute w-full">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block hover:text-ndlk-orange">HOME</a>
+                <a href="about.html" class="block hover:text-ndlk-orange">ABOUT</a>
+                <a href="services.html" class="block hover:text-ndlk-orange">SERVICES</a>
+                <a href="projects.html" class="block text-ndlk-orange">PROJECTS</a>
+                <a href="contact.html" class="block text-ndlk-orange font-bold">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="pt-40 pb-20 bg-ndlk-navy relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+            <div class="absolute top-20 -left-20 w-96 h-96 bg-ndlk-orange/30 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-10 -right-20 w-80 h-80 bg-ndlk-green/20 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">Our <span
+                    class="text-ndlk-orange">Projects</span></h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate-fade-in-up" style="animation-delay: 0.1s;">
+                A showcase of our technical excellence and creative problem-solving across various industries.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section (Placeholder for future functionality) -->
+    <section class="py-10 bg-ndlk-dark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <button data-filter="all"
+                    class="filter-btn px-6 py-2 rounded-full bg-ndlk-orange text-white text-sm font-bold shadow-lg shadow-ndlk-orange/20 transition-all duration-300">All
+                    Projects</button>
+                <button data-filter="pos"
+                    class="filter-btn px-6 py-2 rounded-full bg-ndlk-blue text-slate-300 hover:text-white transition-all duration-300 text-sm border border-white/5">POS
+                    Systems</button>
+                <button data-filter="website"
+                    class="filter-btn px-6 py-2 rounded-full bg-ndlk-blue text-slate-300 hover:text-white transition-all duration-300 text-sm border border-white/5">Web
+                    Site</button>
+                <button data-filter="ecommerce"
+                    class="filter-btn px-6 py-2 rounded-full bg-ndlk-blue text-slate-300 hover:text-white transition-all duration-300 text-sm border border-white/5">E-commerce</button>
+                <button data-filter="social"
+                    class="filter-btn px-6 py-2 rounded-full bg-ndlk-blue text-slate-300 hover:text-white transition-all duration-300 text-sm border border-white/5">Social
+                    Media Management</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1: Retail POS -->
+                <div data-category="pos"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/pos darshbord.png" alt="Retail POS"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">Retail</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">NEW WINTECH LANKA POS</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A high-performance retail management
+                            system with real-time inventory and multi-branch synchronization.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Feb 2026</span>
+                            <a href="project-swiftpos.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project Card 2: SAAS Dashboard -->
+                <div data-category="pos"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/gayan dashborde.png" alt="SAAS Dashboard"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">SAAS</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">UA MOTORS AND SPARE PARTS</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A customized financial analytics
+                            dashboard for corporate forecasting and resource allocation.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Jan 2026</span>
+                            <a href="project-enterprise.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project Card 3: E-commerce -->
+                <div data-category="ecommerce"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/10_pinterest.webp" alt="E-commerce"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">E-commerce</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">Nexus Boutique</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A premium fashion marketplace with
+                            integrated secure payments and dynamic product filtering.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Dec 2025</span>
+                            <a href="project-nexus.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Inventory System -->
+                <div data-category="pos"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/software.jpg" alt="Inventory System"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">Inventory</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">LogiTrack 360</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Workflow optimization tool for supply
+                            chain management and automated restocking reminders.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Nov 2025</span>
+                            <a href="project-logitrack.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Social Media Campaign -->
+                <div data-category="social"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/Social Mediaimage.png" alt="Social Media"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">Campaign</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">VibeWave Launch</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A full-scale social media marketing
+                            strategy that resulted in 200% growth in customer engagement.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Oct 2025</span>
+                            <a href="project-vibewave.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project Card 6: Corporate Website -->
+                <div data-category="website"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/liyontravelsinfohome.png" alt="Corporate Website"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">Travel
+                                & Tourism</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">Liyon Travels</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A multi-language corporate website
+                            designed to represent a global consultancy firm.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: Sep 2025</span>
+                            <a href="project-vertex.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+                <!-- Project 7: Sri Lankan Safest Driving -->
+                <div data-category="website"
+                    class="project-card group relative bg-ndlk-blue rounded-2xl border border-white/5 overflow-hidden hover:border-ndlk-orange/50 transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
+                    style="animation-delay: 0.7s;">
+                    <div class="relative h-[400px] md:h-64 overflow-hidden">
+                        <img src="image/travelweb.png" alt="Travel Site"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ndlk-navy to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="px-3 py-1 bg-ndlk-orange/20 text-ndlk-orange text-[10px] font-bold uppercase tracking-widest rounded border border-ndlk-orange/30">Travel
+                                & Tourism</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">Sri Lankan Safest Driving</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A comprehensive travel and tour platform
+                            offering safe driving services, villa rentals, and curated tour packages across Sri Lanka.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-ndlk-green">Completed: March 2026</span>
+                            <a href="project-travel.html"
+                                class="text-ndlk-orange text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">View
+                                Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div
+                        class="shine-effect absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] pointer-events-none">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Counter / Stats [Sync with Home] -->
+    <section class="py-20 bg-ndlk-orange/10 border-y border-white/5 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-fade-in-up">
+                <div>
+                    <h4 class="text-4xl font-bold text-white tracking-widest mb-2"><span class="stat-number"
+                            data-target="250">0</span>+</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest font-medium">Projects Delivered</p>
+                </div>
+                <div>
+                    <h4 class="text-4xl font-bold text-white tracking-widest mb-2"><span class="stat-number"
+                            data-target="85">0</span>+</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest font-medium">Active Partners</p>
+                </div>
+                <div>
+                    <h4 class="text-4xl font-bold text-white tracking-widest mb-2"><span class="stat-number"
+                            data-target="12">0</span>+</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest font-medium">Countries Reached</p>
+                </div>
+                <div>
+                    <h4 class="text-4xl font-bold text-white tracking-widest mb-2"><span class="stat-number"
+                            data-target="100">0</span>%</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest font-medium">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-ndlk-blue/50 to-ndlk-navy"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Have a Vision?</h2>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">Let's turn your ideas into the next big success
+                story.</p>
+            <a href="contact.html"
+                class="inline-block px-10 py-5 bg-ndlk-orange text-white font-bold rounded-full shadow-2xl hover:bg-orange-600 hover:scale-105 transition-all duration-300">
+                Start Your Project
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ndlk-dark pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-widest block mb-6">
+                        NDLK <span class="text-[#3b82f6]">SOLUTIONS</span>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Providing top-tier software solutions for modern businesses. We turn ideas into reality.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h5 class="text-white font-bold mb-6">Quick Links</h5>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li><a href="index.html" class="hover:text-ndlk-green transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-ndlk-green transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-ndlk-green transition-colors">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-ndlk-green transition-colors">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-ndlk-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h5 class="text-white font-bold mb-6">Services</h5>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-ndlk-green transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-ndlk-green transition-colors">POS Systems</a></li>
+                        <li><a href="#" class="hover:text-ndlk-green transition-colors">Social Media</a></li>
+                        <li><a href="#" class="hover:text-ndlk-green transition-colors">UI/UX Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h5 class="text-white font-bold mb-6">Get in Touch</h5>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#3b82f6] mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Colombo, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-[#3b82f6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:hello@ndlksolutions.com"
+                                class="hover:text-white">hello@ndlksolutions.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-slate-500 text-sm">&copy; 2026 NDLK Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    // Update button styles
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-ndlk-orange', 'text-white', 'shadow-lg', 'shadow-ndlk-orange/20');
+                        b.classList.add('bg-ndlk-blue', 'text-slate-300');
+                    });
+                    btn.classList.add('bg-ndlk-orange', 'text-white', 'shadow-lg', 'shadow-ndlk-orange/20');
+                    btn.classList.remove('bg-ndlk-blue', 'text-slate-300');
+
+                    // Filter cards
+                    projectCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (filterValue === 'all' || cardCategory === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Stats Counter Animation
+            const stats = document.querySelectorAll('.stat-number');
+            const speed = 200;
+
+            const animateStats = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateStats(counter), 10);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const statsObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateStats(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            stats.forEach(stat => statsObserver.observe(stat));
+        });
+    </script>
+</body>
+
+</html>
